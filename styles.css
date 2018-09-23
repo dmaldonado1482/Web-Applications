@@ -1,0 +1,119 @@
+@media screen and (max-width: 600px) {
+    #body {
+        background-color: cyan;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    header p {
+        color: cyan;
+        font-size: .5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    header {
+        font-size: .7em;
+    }
+    
+    #header-msg {
+        font-size: 1.5em;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .main-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+:root {
+    --bg-color: #884EA0;
+    --text-color: white;
+    --nav-bg-color: rgb(201, 125, 245);
+    --nav-text-color: white;
+    --header-font-size: 22px;
+	--main-p-color: black;
+	--body-bg: white;
+
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--body-bg);
+}
+
+header {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+header p {
+    font-size: var(--header-font-size);
+}
+header img {
+    vertical-align: middle;
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+    padding-top: 5px;
+    padding-bottom: 0px;
+    margin-top: 0;
+    border: 5px var(--nav-bg-color);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    padding: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    font-size: var(--header-font-size);
+    padding: 5px 20px;
+}
+
+nav li:hover {
+    background-color: var(--bg-color);
+}
+
+main h3 {
+    color: var(--bg-color);
+}
+
+main p {
+    padding: 0px 15px 0px 15px;
+	color: var(--main-p-color);
+}
+
+footer {
+    color: var(--bg-color);
+    text-align: center;
+}
+
+body:active  {
+	--bg-color: rgb(201, 125, 245);
+	--nav-bg-color: #884EA0;
+	--main-p-color: var(--text-color);
+	--body-bg: #884EA0;
+
+}
+
